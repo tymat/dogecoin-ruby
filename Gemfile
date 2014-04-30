@@ -1,6 +1,6 @@
 source "http://rubygems.org"
 
-# Specify your gem's dependencies in bitcoind-client.gemspec
+# Specify your gem's dependencies in dogecoin-client.gemspec
 gemspec
 
 platforms :ruby_18 do
