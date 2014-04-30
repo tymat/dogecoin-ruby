@@ -1,0 +1,8 @@
+HTTP/1.1 200 OK
+Date: Mon, 10 Jun 2013 08:36:04 +0000
+Connection: keep-alive
+Content-Length: 1657
+Content-Type: application/json
+Server: dogecoin-json-rpc/v0.8.1-beta
+
+{"result":"63a8ab7a46ff31236366de071e72513f8aa7abfee3d23923e3de4ac5c835e0c4","error":null,"id":"curltest"}

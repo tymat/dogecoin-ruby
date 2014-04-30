@@ -34,6 +34,13 @@ describe Dogecoin::Client do
       end
     end
 
+    service 'getblockhash' do
+      it "should get the block hash of a block" do
+        result("12345").should == "63a8ab7a46ff31236366de071e72513f8aa7abfee3d23923e3de4ac5c835e0c4"
+      end
+
+    end 
+
     service 'getmininginfo' do
       it "should produce the expected result" do
         result.should == {

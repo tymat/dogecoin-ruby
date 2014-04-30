@@ -89,6 +89,11 @@ class Dogecoin::Client
     @api.request 'gethashespersec'
   end
 
+  # Returns the hash given a block id 
+  def getblockhash(idx)
+    @api.request 'getblockhash', idx
+  end
+
   # Returns an object containing various state info.
   def getinfo
     @api.request 'getinfo'
