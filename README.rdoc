@@ -52,12 +52,6 @@ Here are several examples of how you can change the host information:
   Dogecoin('username', 'password', :host => 'example.com', :port => 22555, :ssl => true)
   client = Dogecoin::Client.new('username', 'password', :host => 'example.com')
   client.port = 22555
-  client.ssl = true
-  client.ssl?
-  # => true
-  
-  include Dogecoin
-  host 'example.com'
   port 22555
   ssl?
   # => false
