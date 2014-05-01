@@ -35,7 +35,7 @@ class Dogecoin::Client
     @api.request 'getaccountaddress', account
   end
 
-  #	Returns the list of addresses for the given account.
+  # Returns the list of addresses for the given account.
   def getaddressesbyaccount(account)
     @api.request 'getaddressesbyaccount', account
   end
@@ -92,6 +92,11 @@ class Dogecoin::Client
   # Returns the hash given a block id 
   def getblockhash(idx)
     @api.request 'getblockhash', idx
+  end
+ 
+  # Returns the hash of the best (tip) block in the longest block chain.
+  def getbestblockhash
+    @api.request 'getbestblockhash'
   end
 
   # Returns an object containing various state info.
