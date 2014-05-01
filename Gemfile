@@ -4,10 +4,10 @@ source "http://rubygems.org"
 gemspec
 
 platforms :ruby_18 do
-  gem 'json', '~> 1.5.3'
+  gem 'json'
 end
 
 platforms :jruby do
-  gem 'json', '~> 1.5.3'
+  gem 'json'
   gem 'jruby-openssl'
 end
