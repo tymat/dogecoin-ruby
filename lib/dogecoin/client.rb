@@ -64,6 +64,11 @@ class Dogecoin::Client
     @api.request 'getblockcount'
   end
 
+  # Sets the default transaction fee
+  def settxfee(amount)
+    @api.request 'settxfee', amount
+  end
+
   # Returns the block number of the latest block in the longest block chain.
   def getblocknumber
     @api.request 'getblocknumber'
@@ -89,11 +94,11 @@ class Dogecoin::Client
     @api.request 'gethashespersec'
   end
 
-  # Returns the hash given a block id 
+  # Returns the hash given a block id
   def getblockhash(idx)
     @api.request 'getblockhash', idx
   end
- 
+
   # Returns the hash of the best (tip) block in the longest block chain.
   def getbestblockhash
     @api.request 'getbestblockhash'
